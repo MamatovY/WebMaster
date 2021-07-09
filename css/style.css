@@ -14,10 +14,9 @@ img {
 }
 
 .container {
-  width: 600px;
+  width: 1170px;
   height: 100%;
   margin: 0 auto;
-  /* border: solid 1px red; */
 }
 
 section {
@@ -28,6 +27,15 @@ section {
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+
+.fix {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  font-style: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .products .sP .box img {
@@ -59,8 +67,40 @@ a {
   color: black;
 }
 
+.headImg1 {
+  background: url(../img/img1.png);
+}
+
+.headImg2 {
+  background-image: url(../img/img2.png);
+}
+
+.headImgs {
+  height: 200px;
+  padding: 50px;
+  margin-bottom: 50px;
+  color: #03346b;
+  font-size: 18px;
+}
+
+.headImgs h1 {
+  color: #10037e;
+}
+
 .num {
   list-style-type: decimal;
+}
+
+.mark {
+  background: #4d719fc4;
+  padding: 20px 3px;
+  border: 1px dashed #000;
+}
+
+.mark:hover {
+  background: #ffec82;
+  padding: 20px 3px;
+  border: 1px dashed #333;
 }
 
 .popup {
@@ -82,12 +122,13 @@ a {
 }
 
 .popupContent {
-  background-color: #fff;
-  color: #000;
+  background-color: #4d709f;
+  color: rgba(255, 255, 255, 0.9);
   max-width: 800px;
   padding: 30px;
   position: relative;
   border-radius: 25px;
+  display: none;
 }
 
 .popupClose {
@@ -108,8 +149,58 @@ input {
   margin-bottom: 20px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  color: rgba(255, 255, 255);
 }
 
 form {
   padding: 0 30px;
+}
+
+/* ********************** */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+  .sP {
+    display: block;
+  }
+
+  .box {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 90%;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+
+  .sP {
+    display: block;
+  }
+
+  .box {
+    margin-bottom: 30px;
+  }
 }
