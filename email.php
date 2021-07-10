@@ -1,13 +1,19 @@
-<html>
-  <head>
-<title>
-  Космические пришельцы похищали меня - сообщение о похищении
-</title>
-  </head>
-  <body>
-    
-<p>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Booster</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
     <?php
+    if(isset($_POST['submit'])){
     $name=$_POST['name'];    
     $number=$_POST['number'];
     $email=$_POST['email'];
@@ -24,14 +30,31 @@
     
     . " Название товара: $productName \n" ;
 
-    if(mail($email, $subject, $msg, 'From: '.$to )){
-      echo("Finish!");
+    $status=mail($email, $subject, $msg, 'From: ' . $to);
+    if($status){
+        echo "Finish";
     }
     
-  
     
+    
+    }
 
     ?>
-</p>
-  </body>
+
+
+</body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
