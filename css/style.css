@@ -152,6 +152,15 @@ input {
   color: rgba(255, 255, 255);
 }
 
+.sbmt {
+  padding: 5px 15px;
+  background-color: #022b6167;
+}
+
+.sbmt:hover {
+  background-color: #022b61;
+}
+
 form {
   padding: 0 30px;
 }

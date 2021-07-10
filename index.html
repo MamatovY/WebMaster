@@ -233,30 +233,34 @@
                     Заполните Форму
                 </div>
 
-                <form action="#" method="post">
+                <form action="email.php" method="post">
                     <div>
                         <label for="name">Name:</label>
                         <br>
-                        <input name="name" type="text">
+                        <input required name="name" type="text">
                     </div>
 
                     <div>
                         <label for="number">Number:</label>
                         <br>
-                        <input name="number" type="tel">
+                        <input required name="number" type="tel">
                     </div>
 
                     <div>
                         <label for="email">Email:</label>
                         <br>
-                        <input name="email" type="email">
+                        <input required name="email" type="email">
                     </div>
 
                     <div>
                         <label for="productName">Название товара:</label>
                         <br>
-                        <input name="productName" type="text">
+                        <input required name="productName" type="text">
                     </div>
+                    <div>
+                        <input type="submit" class="sbmt" value="Отправить" name="submit" />
+                    </div>
+
                 </form>
             </div>
         </div>
