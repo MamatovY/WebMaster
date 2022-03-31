@@ -1,0 +1,16 @@
+{
+  "name": "Git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://MamatovY.github.io/WebMaster",
+  "scripts": {
+    "deploy":"gh-pages -d WebMaster"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh": "^2.8.9"
+  }
+}
